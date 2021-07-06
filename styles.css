@@ -1,0 +1,105 @@
+.sidebar img
+{
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+
+body
+{
+    background-size: cover;
+    font-family: 'Manjari', sans-serif;
+}
+
+.title h1
+{
+    padding: 20px 0px;
+    text-align: center;
+    font-size: 2.9em;
+    text-transform: uppercase;
+    color: #393232;
+}
+
+.container
+{
+    background-color: rgba(107, 107, 107, 0.226);
+    width: 90%;
+    max-width: 1000px ;
+    margin: 1.6em auto;
+    border-radius: 25px;
+    padding: 10px;
+
+    display: grid;
+    gap: 1.6em;
+    grid-template-columns: repeat(5,1fr);
+}
+
+.container > .header,
+.container > .content,
+.container > .sidebar,
+.container > .footer,
+.container > div
+{
+    background-color: rgba(71, 97, 97, 0.171);
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.container .header, .container .footer
+{
+    background-color: rgba(17, 19, 19, 0.664);
+    color: #ffffff; 
+    grid-column: 1/6;
+}
+
+.container .content /*decir del 1/4 puede equivaler a span 3. que seria 3 fracciones*/
+{
+    grid-column: 1/4;
+
+}
+
+.content > .article
+{
+    background-color: rgba(255, 248, 220, 0.527);
+    padding: 20px;
+    margin-top: 5px;
+    color: rgb(3, 3, 48);
+    border-color: darkgray;
+    border-radius: 10px;
+}
+.content .article p, .content .article h1
+{
+    padding: 10px;
+}
+
+
+.container .sidebar
+{
+    grid-column: 4/6;
+    background-color: darkgray;
+    color: #000000;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  
+}
+
+.container > .related_post
+{
+    height: 180px;
+    border:#03033054 2px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+
+.container > .related_post:hover
+{
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.664);
+    background-color: #ffffff4d; 
+    font-weight: 500;
+
+}

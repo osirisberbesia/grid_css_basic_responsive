@@ -1,0 +1,15 @@
+@media screen and (max-width:768px)
+{
+   .header
+   {
+       text-align: center;
+   } 
+
+   .container .content, .container .sidebar, .container .related_post
+   {
+      grid-column: 1/-1; 
+   }
+
+
+
+}
